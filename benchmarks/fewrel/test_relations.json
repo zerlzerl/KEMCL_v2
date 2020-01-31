@@ -1,0 +1,113 @@
+{
+    "P177": {
+        "id": "P177",
+        "label": "crosses",
+        "description": "obstacle (body of water, road, ...) which this bridge crosses over or this tunnel goes under",
+        "alt_label": "spans, under, over, bridge over, spanning, through, tunnel under",
+        "index": 64
+    },
+    "P364": {
+        "id": "P364",
+        "label": "original language of film or TV show",
+        "description": "language in which a film or a performance work was originally created. Deprecated for written works; use P407 (\"language of work or name\") instead.",
+        "alt_label": "language, original language, created on language, language of the original work",
+        "index": 65
+    },
+    "P2094": {
+        "id": "P2094",
+        "label": "competition class",
+        "description": "official classification by a regulating body under which the subject (events, teams, participants, or equipment) qualifies for inclusion",
+        "alt_label": "weight class, class for competition, compclass, disability sport classifications, qualification class, qualifies for, rated at",
+        "index": 66
+    },
+    "P361": {
+        "id": "P361",
+        "label": "part of",
+        "description": "object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of \"has part\" (P527, see also \"has parts of the class\" (P2670)).",
+        "alt_label": "in, assembly of, component of, contained within, is part of, merged into, merged with, meronym of, part of-property, section of, subassembly of, subsystem of, system of, within, band member of",
+        "index": 67
+    },
+    "P641": {
+        "id": "P641",
+        "label": "sport",
+        "description": "sport in which the subject participates or belongs to",
+        "alt_label": "play, sports, plays, sport played",
+        "index": 68
+    },
+    "P59": {
+        "id": "P59",
+        "label": "constellation",
+        "description": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)",
+        "alt_label": "part of constellation",
+        "index": 69
+    },
+    "P413": {
+        "id": "P413",
+        "label": "position played on team / speciality",
+        "description": "position or specialism of a player on a team, e.g. Small Forward",
+        "alt_label": "specialism, fielding position, player position, position (on team), speciality",
+        "index": 70
+    },
+    "P206": {
+        "id": "P206",
+        "label": "located in or next to body of water",
+        "description": "sea, lake or river",
+        "alt_label": "bay, lake, sea, body of water, loc (water), located next to body of water, located on body of water, next to lake, ocean, on bay, on coast of, on harbour, on lake, on river, on shore of, on the coast of, on the shore of",
+        "index": 71
+    },
+    "P412": {
+        "id": "P412",
+        "label": "voice type",
+        "description": "person's voice type. expected values: soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass (and derivatives)",
+        "alt_label": "register, range of voice, tessitura, type of voice, vocal type",
+        "index": 72
+    },
+    "P155": {
+        "id": "P155",
+        "label": "follows",
+        "description": "immediately prior item in a series of which the subject is a part [if the subject has replaced the preceding item, e.g. political offices, use \"replaces\" (P1365)]",
+        "alt_label": "preceded by, predecessor, succeeds, before was, comes after, prequel is, previous is, sequel of, split from, succeeds to, successor to",
+        "index": 73
+    },
+    "P26": {
+        "id": "P26",
+        "label": "spouse",
+        "description": "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"partner\" (P451) for non-married companions",
+        "alt_label": "husband, partner, life partner, consort, husbands, marriage partner, married, married to, marry, partners, spouses, wed, wedded to, wife, wives",
+        "index": 74
+    },
+    "P410": {
+        "id": "P410",
+        "label": "military rank",
+        "description": "military rank achieved by a person (should usually have a \"start time\" qualifier), or military rank associated with a position",
+        "alt_label": "rank",
+        "index": 75
+    },
+    "P25": {
+        "id": "P25",
+        "label": "mother",
+        "description": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)",
+        "alt_label": "mom, mum, child of, daughter of, is child of, is daughter of, is son of, parent, son of, mam, has mother",
+        "index": 76
+    },
+    "P463": {
+        "id": "P463",
+        "label": "member of",
+        "description": "organization or club to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that).",
+        "index": 77
+    },
+    "P40": {
+        "id": "P40",
+        "label": "child",
+        "description": "subject has object as biological, foster, and/or adoptive child",
+        "alt_label": "son, kid, issue, children, daughter, daughters, has child, has children, has daughter, has daughters, has kid, has kids, has son, has sons, kids, offspring, parent of, sons, progeny",
+        "index": 78
+    },
+    "P921": {
+        "id": "P921",
+        "label": "main subject",
+        "description": "primary topic of a work (see also P180: depicts)",
+        "alt_label": "subject, artistic theme, topic, sitter, theme, keyword, about, main topic, index term, subject heading, describes, is about, main issue, main thing, mainly about, primary subject, primary topic, topic of work, mentions, refers to",
+        "index": 79
+    }
+}
