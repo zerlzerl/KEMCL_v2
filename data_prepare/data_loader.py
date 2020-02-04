@@ -177,6 +177,7 @@ class DataLoader(BaseLoader):
             self.bert_model.to(self.device)
         else:
             self.bert_client = BertClient(ip=self.bert_service_ip)
+
     def read_pickle(self, file_path):
         with open(file_path, 'rb') as f:
             vec = pkl.load(f)

@@ -32,6 +32,7 @@ class WikiDataQuerier:
                     '?o wdt:P31 ?oclass.' \
                     'SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }' \
                     '} LIMIT 1000000' % relation_wiki_id
+        # print(query_str)
         return self.get_query_result(query_str)
 
     def fetch_hypernym_by_entity(self, entity_wiki_id):
@@ -54,6 +55,13 @@ class WikiDataQuerier:
                     'SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }' \
                     '}' % ' '.join(['wd:%s' % wiki_id for wiki_id in ids])
         # print(query_str)
+        return self.get_query_result(query_str)
+
+    def fetch_labels_by_entity_ids(self, ids):
+        query_str = 'SELECT ?item ?itemLabel WHERE {' \
+                    'VALUES ?item { %s }' \
+                    'SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }' \
+                    '}' % ' '.join(['wd:%s' % wiki_id for wiki_id in ids])
         return self.get_query_result(query_str)
 
 if __name__ == '__main__':
