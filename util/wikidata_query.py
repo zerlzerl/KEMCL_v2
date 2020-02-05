@@ -64,6 +64,18 @@ class WikiDataQuerier:
                     '}' % ' '.join(['wd:%s' % wiki_id for wiki_id in ids])
         return self.get_query_result(query_str)
 
+    def fetch_instanceof_or_subclassof_relation_between_a_list_ids(self, ids):
+        query_str = 'SELECT ?head ?tail WHERE {' \
+                    'VALUES ?head { ' \
+                    '%s' \
+                    '}' \
+                    '?head wdt:P31|wdt:P279 ?tail.' \
+                    'FILTER (?tail IN ( %s ))' \
+                    'SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }' \
+                    '}' % (' '.join(['wd:%s' % wiki_id for wiki_id in ids]), ','.join(['wd:%s' % wiki_id for wiki_id in ids]))
+        return self.get_query_result(query_str)
+
+
 if __name__ == '__main__':
     # fetch all relations information from wikidata and store in local file system
     querier = WikiDataQuerier()
